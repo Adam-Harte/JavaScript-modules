@@ -13,3 +13,8 @@ console.log(info.location);
 console.log(info.hobbies);
 
 console.log(occupation);
+
+//default exports and imports
+import log from './defaultExport';
+
+log();
