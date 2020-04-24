@@ -47,5 +47,18 @@
 			export and instead any name we pass it will becomes the name of the
 			default export we are importing.
 		</p>
+		<h3>Dynamic Imports and Code Splitting</h3>
+		<p>
+			We can dynamically import exported code as and when we need it by calling
+			import as a function. We would do this to reduce the amount of requests we
+			are making for files on the initial page load as any code we export and
+			import in our scripts at the start of executon must be donwlaoded at
+			runtime on page load, so any functionality we do not need straight away
+			can instead be dynamically imported later on and therfore speedup initail
+			page load and performance. We call import as a function with the argument
+			being a string of the path to the file we want to import. This function
+			returns a promise allowing us to then use promie chaining to access
+			specific vairables, objects, function etc of the module we have imported.
+		</p>
 	</body>
 </html>

@@ -14,7 +14,15 @@ console.log(info.hobbies);
 
 console.log(occupation);
 
-//default exports and imports
+// default exports and imports
 import log from './defaultExport';
 
 log();
+
+// dynamic imports
+setTimeout(() => {
+	import('./dynamicImports').then((module) => {
+		console.log(module.pet);
+		module.dynamicLog();
+	});
+}, 5000);
